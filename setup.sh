@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-rm -r ../.devcontainer
-cp -r .devcontainer ../
+echo "Current directory: $(pwd)"
+rm -r ./.devcontainer/
+cp -r ./devcontainers/.devcontainer ./
