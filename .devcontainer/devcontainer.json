@@ -1,0 +1,19 @@
+{
+  "name": "Alpine Devcontainer - Base",
+  "build": {
+    "dockerfile": "ContainerFile"
+  },
+  "runArgs": [
+    //,"--security-opt=label=disable"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "fish"
+      },
+      "extensions": [
+        //"vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
