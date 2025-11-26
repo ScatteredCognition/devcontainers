@@ -4,10 +4,12 @@ To use, run the following command in your project's root directory depending on 
 
 ## Base
 ```bash
-git submodule add -b base 'https://github.com/ScatteredCognition/devcontainers.git' && sh -c './devcontainers/setup.sh'
+git submodule add -b base 'https://github.com/ScatteredCognition/devcontainers.git'
+chmod +x ./devcontainers/setup.sh && ./devcontainers/setup.sh
 ```
 
 ## Java
 ```bash
-git submodule add -b java 'https://github.com/ScatteredCognition/devcontainers.git' && sh -c './devcontainers/setup.sh'
+git submodule add -b java 'https://github.com/ScatteredCognition/devcontainers.git'
+chmod +x ./devcontainers/setup.sh && ./devcontainers/setup.sh
 ```
