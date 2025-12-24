@@ -1,0 +1,19 @@
+{
+  "name": "Alpine Devcontainer - Java",
+  "build": {
+    "dockerfile": "ContainerFile"
+  },
+  "runArgs": [
+    //,"--security-opt=label=disable"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "fish"
+      },
+      "extensions": [
+        "oracle.oracle-java"
+      ]
+    }
+  }
+}
