@@ -1,5 +1,5 @@
 {
-  "name": "Alpine Devcontainer - Java",
+  "name": "Alpine Devcontainer - Java 8",
   "build": {
     "dockerfile": "ContainerFile"
   },
