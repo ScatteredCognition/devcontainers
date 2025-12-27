@@ -4,7 +4,7 @@ FROM docker.io/library/alpine:latest
 # Install the basics
 RUN apk add --no-cache \
     bash bash-completion \
-    fish fish-completion \
+    fish \
     git openssh-client curl \
     && \
     curl -fsSL \
