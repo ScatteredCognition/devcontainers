@@ -9,7 +9,7 @@ chmod +x ./devcontainers/setup.sh && ./devcontainers/setup.sh base
 ```
 
 ## Java 8
+- In the created container, run:
 ```bash
-git submodule add 'https://github.com/ScatteredCognition/devcontainers.git'
-chmod +x ./devcontainers/setup.sh && ./devcontainers/setup.sh java-8
+apk add openjdk8
 ```
