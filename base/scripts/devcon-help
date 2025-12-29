@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 echo "-> List of setups"
-echo "sudo setup-java : Setup OpenJDK 8"
-echo "sudo setup-rust : Setup rust toolchain via official rustup tool (user)"
+echo "setup-java : Setup OpenJDK 8"
+echo "setup-rust : Setup rust toolchain via official rustup tool (user)"
 echo "><>"
 echo "-> List of helpers/utilities"
-echo "host-spawn : Run commands on the host system (useful for scripting)"
+echo "hpwn (host-spawn) : Run commands on the host system (useful for scripting)"
 echo "jvrn task01.java task02.java ... : Compile and run specified files with .java extensions"
 echo "---> jvrn *.java to compile and run all programs in current dir"

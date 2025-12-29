@@ -1,25 +1,19 @@
-# download stuff from online
-FROM docker.io/library/alpine:latest AS grabber
-RUN apk add --no-cache curl && mkdir -p /dl && \
-    curl -fsSL https://github.com/1player/host-spawn/releases/latest/download/host-spawn-x86_64 \
-    -o /dl/host-spawn && chmod +X /dl/host-spawn
-
-# Final Image
+# Image
 FROM docker.io/library/alpine:latest
 
 # copy setup scripts and precompiled programs
 COPY scripts/* /usr/local/bin/
-COPY --from=grabber /dl/host-spawn /usr/local/bin/
 
 # copy configs
-COPY configs/greet.fish /etc/fish/conf.d/
+COPY configs/customshi.fish /etc/fish/conf.d/
 
 # Install the basics
 RUN apk add --no-cache \
     fish git curl pfetch-rs
 
 # Install host-spawn
-#RUN curl -fsSL https://github.com/1player/host-spawn/releases/latest/download/host-spawn-x86_64 -o /usr/local/bin/host-spawn
+RUN curl -fsSL https://github.com/1player/host-spawn/releases/latest/download/host-spawn-x86_64 -o /usr/local/bin/host-spawn && \
+    ln -s /usr/local/bin/host-spawn /usr/local/bin/hpwn
 
 # Switch to user
 #USER root

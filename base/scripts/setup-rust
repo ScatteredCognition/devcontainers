@@ -1,4 +1,3 @@
 #!/usr/bin/env fish
-apk add --no-cache curl
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+apk add --no-cache curl build-base rustup
 fish_add_path ~/.cargo/bin
