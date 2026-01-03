@@ -6,24 +6,25 @@ To use this devcontainer image, run the following commands in your project's roo
 
 ```bash
 git submodule add 'https://github.com/ScatteredCognition/devcon-alp.git'
-chmod +x ./devcon-alp/setup.sh && ./devcon-alp/setup.sh
+./devcon-alp/setup.sh
 ```
 
 ## Details
 - Uses the [docker.io/library/alpine:latest](https://hub.docker.com/_/alpine/) image as a base  
 - Size is around 50MB~  
-- Uses the `fish` shell as default
-- Included packages
-    <!-- - `doas` w/ sudo shim 
+- Uses the `fish` shell as default  
+- Included packages  
+    - `doas` w/ sudo shim 
         - paswordless root access enabled for users in `wheel` group
-    - `shadow` -->
+    - `shadow`
     - `fish`
     - `git`
     - `curl`
     - `pfetch-rs`
     - `host-spawn` (symlinked to `hpwn`)
 
-> NOTE: All Environment Variables for different utilities are configured for the `fish` shell
+> NOTE: All Environment Variables for different utilities are configured for the `fish` shell  
+> NOTE: Includes `vscode` user/group with UID/GID 1000 for compatibility with DevPod and other tools
 
 ## Helper tools
 - `devcon-help`:
