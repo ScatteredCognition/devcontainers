@@ -25,7 +25,7 @@ COPY configs/customshi.fish /etc/fish/conf.d/
 COPY configs/rust-path.fish.bak /etc/fish/conf.d/
 
 # Install the basics
-RUN apk add --no-cache fish git curl pfetch-rs
+RUN apk add --no-cache fish git curl nano micro pfetch-rs
 
 # Install host-spawn
 RUN curl -fsSL https://github.com/1player/host-spawn/releases/latest/download/host-spawn-x86_64 \

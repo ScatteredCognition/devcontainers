@@ -20,6 +20,7 @@ git submodule add 'https://github.com/ScatteredCognition/devcon-alp.git'
     - `fish`
     - `git`
     - `curl`
+    - `nano`/`micro`
     - `pfetch-rs`
     - `host-spawn` (symlinked to `hpwn`)
 
