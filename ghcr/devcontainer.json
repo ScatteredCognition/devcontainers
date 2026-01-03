@@ -1,0 +1,11 @@
+{
+  "name": "Alpine Devcontainer - Base (GHCR)",
+  "image": "ghcr.io/faeizmahrus/devcon-alp:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "fish"
+      }
+    }
+  }
+}
