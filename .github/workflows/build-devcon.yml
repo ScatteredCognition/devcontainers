@@ -26,3 +26,4 @@ jobs:
         with:
           imageName: ghcr.io/faeizmahrus/devcon-alp
           platform: linux/amd64
+          configFile: src/devcontainer.json
