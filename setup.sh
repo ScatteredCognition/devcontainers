@@ -45,6 +45,7 @@ if [ "$BUILD_MODE" = "1" ]; then
         echo "Failed to copy files to .devcontainer directory"
         echo "Exiting..."
         exit 1
+    fi
 fi
 
 
