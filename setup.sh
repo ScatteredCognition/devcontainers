@@ -1,12 +1,13 @@
 #!/usr/bin/env sh
 echo "Current directory: $(pwd)"
+CONNAME=devcon-alp
 
-if [ -f ./devcon-alp/src/.devcon-alp ]; then
+if [ -f ./"$CONNAME"/src/.devcon-alp ]; then
     BASEDIR=$(pwd)
-elif [ -f ./src/.devcon-alp ]; then
+elif [ -f ./src/."$CONNAME" ]; then
     cd .. && BASEDIR=$(pwd)
 else
-    echo "Can't find files, please run from project or submodule root"
+    echo "Can't find files, please run from project or submodule root directory"
     exit 1
 fi
 
@@ -20,7 +21,7 @@ else
 fi
 
 # Copy the new files
-if cp -r "$BASEDIR/devcon-alp/src/" ./.devcontainer/; then
+if cp -r "$BASEDIR/$CONNAME/src/" ./.devcontainer/; then
     echo "Copied files to .devcontainer directory"
 else
     echo "Failed to copy files to .devcontainer directory"
